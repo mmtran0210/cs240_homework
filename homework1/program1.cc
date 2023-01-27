@@ -8,14 +8,21 @@ using std::endl;
 
 int main() {
     bool t = true;
+    
     double count = 0.0;
+    
     double right = 0.0;
+    
     while ( t == true ) { 
         int x, y, z, n;
+        
         char a, b;
+        
         char input;
+        
         count ++;
         cin >> x >> a >> y >> b >> z;
+        
         if( a == '+') {
             n = x + y;
         }
@@ -63,10 +70,13 @@ int main() {
         }
 
         cin >> input;
+        
         switch (input)
         {
+        
         case 'c':
             continue;
+        
         case 'q':
             double p = (right/count) * 100;
             if( p > 0 ) {
