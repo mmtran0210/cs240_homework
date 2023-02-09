@@ -8,13 +8,8 @@
 using namespace std;
 
 int NumDigits(int n) {
-  // If n is zero, return 1
   if (n == 0) return 1;
-  
-  //  log base 10 of the absolute value of n
   int log10_n = floor(log10(abs(n)));
-  
-  // Return log10_n + 1 as the result
   return log10_n + 1;
 }
 
