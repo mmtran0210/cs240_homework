@@ -1,3 +1,5 @@
+// Minh My Tran - CSCE 240 003 - Exam 1 
+
 #include <iostream>
 #include <cctype>
 using namespace std;

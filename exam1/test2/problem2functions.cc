@@ -1,3 +1,5 @@
+// Minh My Tran - CSCE 240 003 - Exam 1 
+
 #include <cmath>
 
 double Distance(double x1, double y1, double x2 = 0, double y2 = 0) {
