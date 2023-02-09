@@ -22,7 +22,6 @@ bool FindAndReplace(int &x, int find, int replace) {
   string findStr = to_string(find);
   string replaceStr = to_string(replace);
   int findLength = findStr.length();
-  int replaceLength = replaceStr.length();
   int findStart = xStr.length() - findLength;
 
   for (int i = findStart; i >= 0; i--) {
