@@ -1,0 +1,16 @@
+Passed default constructor / accessor function test.
+Passed constructor one good argument / accessor function test.
+Passed constructor one bad argument / accessor function test.
+Passed constructor two good arguments / accessor function test.
+Passed constructor two bad arguments / accessor function test.
+Passed constructor three good arguments / accessor function test.
+Passed constructor three good arguments / accessor function test.
+Passed good mutator / accessor function test.
+Passed bad mutator / accessor function test.
+3:06 p.m.
+9:00 a.m.
+0:00:00 a.m.
+5:30:00 p.m.
+12:00 a.m.
+13:07:09 a.m.
+3:00 a.m.
