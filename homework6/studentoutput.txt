@@ -1,0 +1,1 @@
+First value in the answer key file should be the number of questions in the file (a positive integer).
