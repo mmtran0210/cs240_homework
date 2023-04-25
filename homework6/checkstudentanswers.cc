@@ -121,6 +121,7 @@ int main(int argc, char * * argv) {
   // output whether or not the student answer the question correctly.
 
 // output the number of questions the student answered correctly
+// open the text file containing the student's answers (argv[2])
 ifstream student_answers(argv[2]);
 if (!student_answers.is_open()) {
     cout << "Failed to open student answers file" << endl;
@@ -131,17 +132,26 @@ string student_answer;
 int num_correct = 0;
 for (int i = 0; i < number_of_questions; ++i) {
     getline(student_answers, student_answer);
-    cout << "Question " << i + 1 << ": " << endl;
-    cout << "Student answer: " << student_answer << endl;
+    cout << "Question: " << the_questions[i]->GetQuestion() << endl;
+    cout << "Correct Answer: ";
+    if (dynamic_cast<TrueFalseQuestion*>(the_questions[i])) {
+        cout << (dynamic_cast<TrueFalseQuestion*>(the_questions[i])->GetAnswer() ? "true" : "false") << endl;
+    } else if (dynamic_cast<ShortAnswerQuestion*>(the_questions[i])) {
+        cout << dynamic_cast<ShortAnswerQuestion*>(the_questions[i])->GetAnswer() << endl;
+    } else if (dynamic_cast<MultipleChoiceQuestion*>(the_questions[i])) {
+        cout << dynamic_cast<MultipleChoiceQuestion*>(the_questions[i])->GetCorrect() << endl;
+    }
+    cout << "Student's answer: " << student_answer;
     if (the_questions[i]->CheckAnswer(student_answer)) {
-        cout << "Correct" << endl;
+        cout << " - Correct" << endl;
         ++num_correct;
     } else {
-        cout << "Incorrect" << endl;
+        cout << " - Incorrect" << endl;
     }
+        cout << endl;
 }
-cout << "Number of questions answered correctly: " << num_correct << endl;
+cout << "The student answered " << num_correct << " of the "
+     << number_of_questions << " questions correctly" << endl;
 
-
-  return 0;
+student_answers.close();
 }

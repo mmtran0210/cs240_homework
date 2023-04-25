@@ -1,1 +1,21 @@
-First value in the answer key file should be the number of questions in the file (a positive integer).
+Question: CSCE240 is the greatest class ever.
+Correct Answer: true
+Student's answer: true - Correct
+
+Question: Why do you think CSCE240 is the greatest class ever.
+Correct Answer: Because I have grown to love C++.
+Student's answer: just because - Incorrect
+
+Question: C++ is the ____.
+Correct Answer: 0x200c4fd1e80
+Student's answer: great - Incorrect
+
+Question: Why did the chicken cross the playground?
+Correct Answer: To get to the other slide.
+Student's answer: he couldn't find the road - Incorrect
+
+Question: That wasn't funny.
+Correct Answer: false
+Student's answer: false - Correct
+
+The student answered 2 of the 5 questions correctly
