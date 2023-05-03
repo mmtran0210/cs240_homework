@@ -1,7 +1,7 @@
 // My Tran - CSCE 240 
 
-#ifndef FACT_CHECKED_STATEMENT_H
-#define FACT_CHECKED_STATEMENT_H
+#ifndef _FACT_CHECKED_STATEMENT_H_
+#define _FACT_CHECKED_STATEMENT_H_
 
 #include <iostream>
 #include "sentence.h"
@@ -53,4 +53,4 @@ std::ostream& operator<<(std::ostream& os, const FactCheckedStatement& s) {
 
 }  // namespace Project3Problem2
 
-#endif
+#endif // _FACT_CHECKED_STATEMENT_H_

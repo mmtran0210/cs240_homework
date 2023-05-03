@@ -104,6 +104,7 @@ class Set {
 
   int GetCardinality() const { return size_; }
 
+  // Intersection function
   Set<TheType> Intersection(const Set& right) const {
     Set<TheType> result;
     for (int i = 0; i < size_; ++i) {
@@ -113,7 +114,8 @@ class Set {
     }
     return result;
   }
-
+  
+  //  == operator
   bool operator==(const Set& right) const {
     if (size_ != right.size_) {
       return false;
@@ -134,5 +136,5 @@ class Set {
 
 }  // namespace Project3Problem3
 
-#endif  // _SET_H
+#endif  // _SET_H_
 

@@ -9,8 +9,8 @@ using namespace Project3Problem3;  // expected cpplint error message here
 
 int main() {
   // Test Set class with int type
-  int values1[] = {1, 8, 2, 6, 3};
-  Set<int> set1(5, values1);
+  int values1[] = {6,4 ,1};
+  Set<int> set1(3, values1);
   cout << "set1: ";
   set1.Print();
 
