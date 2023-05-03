@@ -3,8 +3,8 @@
 #ifndef _FACT_CHECKED_STATEMENT_H_
 #define _FACT_CHECKED_STATEMENT_H_
 
-#include <iostream>
-#include "sentence.h"
+#include<iostream>
+#include"sentence.h"
 
 namespace Project3Problem2 {
 
